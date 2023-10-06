@@ -1,39 +1,38 @@
-#include <stdio.h>
+ #include <stdio.h>
+
 
 /**
- * main - function to print combination of two numbers
+ * main -prints all possible different combinations of two digits
+ * in ascending order, separated by a comma followed by a space.
  *
- * Return: always 0
+ * Return: Always 0.
+ *
  */
 
 int main(void)
 {
-	int m = '0';
-	int n = '0';
+	int digit1, digit2;
 
-	while (m <= '9')
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
-		while (n <= '9')
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
-			if (!(m > n) || m == n)
-			{
-				putchar(m);
-				putchar(n);
-				if (m == '8' && n == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-			n++;
-		}
-		n = '0';
-		m++;
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
 
+			if (digit1 == 8 && digit2 == 9)
+			continue;
+
+
+			putchar(',');
+			putchar(' ');
+		}
 	}
-return (0);
+
+	putchar('\n');
+
+	return (0);
+
 }
+
+
