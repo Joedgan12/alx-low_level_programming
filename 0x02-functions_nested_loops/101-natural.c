@@ -1,18 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - function to summultiples of 3 or 5 in numbers below 1024
- * Return: 0
+ * main - prints the sum of all multiples of 3 or 5 up to 1024
+ * Return: always (success)
  */
 
 int main(void)
 {
-	int sum = 0;
-	int i;
-
-	for (i = 0 ; i < 1024 ; i++)
+	int i, z = 0;
+	while (i < 1024)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-			sum = sum + 1;
+		if ((i % 3 == 0) || (i % 5 == 0))
+		{
+			z += i;
+		}
+		i++;
 	}
 	printf("%d\n", sum);
 	return (0);
