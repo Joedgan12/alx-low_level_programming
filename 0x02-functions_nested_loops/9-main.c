@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
  * main - check the code
  *
@@ -8,6 +6,7 @@
  */
 int main(void)
 {
-    times_table();
-    return (0);
+	times_table();
+	return (0);
 }
+
