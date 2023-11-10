@@ -14,7 +14,7 @@ void print_opcodes(char *a, int n)
 	for (i = 0; i < n; i++)
 	{
 		printf("%.2hhx", a[i]);
-		if (i < n -1)
+		if (i < n - 1)
 			printf(" ");
 	}
 	printf("\n");
@@ -29,7 +29,7 @@ void print_opcodes(char *a, int n)
 int main(int argc, char *argv[])
 {
 	int n;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
