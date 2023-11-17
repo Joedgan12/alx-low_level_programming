@@ -6,7 +6,7 @@
 /**
  * _strlen - returns length of a string
  * @s: character is s
- * Return: value is i
+ * Return: value is x
  */
 
 int _strlen(const char *s)
