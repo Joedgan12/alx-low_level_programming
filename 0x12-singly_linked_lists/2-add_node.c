@@ -6,18 +6,18 @@
 /**
  * _strlen - returns length of a string
  * @s: character is s
- * Return: value is x
+ * Return: value is i
  */
 
 int _strlen(const char *s)
 {
-	int x = 0;
+	int i = 0;
 
-	while (s[x] != '\0')
+	while (s[i] != '\0')
 	{
-		x++;
+		i++;
 	}
-	return (x);
+	return (i);
 }
 
 /**
