@@ -42,7 +42,7 @@ size_t looped_listint_len(const listint_t *head)
 				node++;
 				nikes = nikes->next;
 			}
-			
+		
 			return (node);
 		}
 
@@ -61,7 +61,7 @@ size_t looped_listint_len(const listint_t *head)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t node, ind = 0;
-	
+
 	node = looped_listint_len(head);
 
 	if (node == 0)
