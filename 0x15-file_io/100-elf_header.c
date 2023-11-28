@@ -83,12 +83,12 @@ void print_class(unsigned char *e_ident)
 	}
 }
 /**
- * print_data - we print data of ELF headr
- * @_ident: pointer to an array having ELF clas
+ * print_data - we print data of ELF header
+ * @_ident: pointer to an array having ELF class
  */
 void print_data(unsigned char *e_ident)
 {
-	printf("Data:");
+	printf(" Data: ");
 
 	switch (e_ident[EI_DATA])
 	{
@@ -254,7 +254,7 @@ void close_elf(int elf)
  *
  * Description: if file not function/ELF file - exit code 98
  */
-int main(int __attribute__((__unused__))agc, char *argv[])
+int main(int __attribute__((__unused__))argc, char *argv[])
 {
 	Elf64_Ehdr *header;
 	int no, yes;
